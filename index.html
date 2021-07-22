@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Форма заказа</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!--Страница заказа-->
+    <section class="page">
+      <div class="container">
+        <div class="header">
+          <h1 class="title">Футбольные мячи</h1>
+          <!--Таймер-->
+          <div class="timer" id="timer-1">
+            <div class="field">
+              <span class="value" data-value="days">00</span>
+              <span class="label">Дни</span>
+            </div>
+
+            <div class="field">
+              <span class="value" data-value="hours">00</span>
+              <span class="label">Часы</span>
+            </div>
+
+            <div class="field">
+              <span class="value" data-value="mins">00</span>
+              <span class="label">Минуты</span>
+            </div>
+
+            <div class="field">
+              <span class="value" data-value="secs">00</span>
+              <span class="label">Секунды</span>
+            </div>
+          </div>
+        </div>
+        <ul class="page-list list">
+          <li class="page-list-item">
+            <img
+              class="page-list-img"
+              src="./images/img1.jpg"
+              alt="оранжевый футбольный мяч"
+              width="225"
+              height="225"
+            />
+            <h2 class="title-name">Оранжевый футбольный мяч</h2>
+            <h3 class="title-price">Цена: 78 000,00 грн.</h3>
+            <form action="#" class="form">
+              <input
+                class="form-input"
+                type="text"
+                name="name"
+                autofocus
+                placeholder="Введите имя"
+                autocomplete="off"
+                pattern="^[a-zA-Zа-яА-Я]*$"
+                title="Имя может состоять только из букв. Например Иван, Анастасия и т. п."
+                minlength="2"
+                maxlength="32"
+                required
+              />
+              <input
+                class="form-input"
+                type="tel"
+                name="phone"
+                placeholder="Введите номер телефона"
+                pattern="^\+380\d{3}\d{2}\d{2}\d{2}$"
+                min="13"
+                max="13"
+                title="Номер телефона должен состоять из 12 цифр и должен начинаться с +380"
+                required
+              />
+              <button type="submit" class="button">Сделать заказ</button>
+            </form>
+          </li>
+          <li class="page-list-item">
+            <img
+              class="page-list-img"
+              src="./images/img2.jpg"
+              alt="кожаный футбольный мяч"
+              width="225"
+              height="225"
+            />
+            <h2 class="title-name">Кожаный футбольный мяч</h2>
+            <h3 class="title-price">Цена: 130 000,00 грн.</h3>
+            <form action="#" class="form">
+              <input
+                class="form-input"
+                type="text"
+                name="name"
+                autofocus
+                placeholder="Введите имя"
+                autocomplete="off"
+                pattern="^[a-zA-Zа-яА-Я]*$"
+                title="Имя может состоять только из букв. Например Иван, Анастасия и т. п."
+                minlength="2"
+                maxlength="32"
+                required
+              />
+              <input
+                class="form-input"
+                type="tel"
+                name="phone"
+                placeholder="Введите номер телефона"
+                pattern="^\+380\d{3}\d{2}\d{2}\d{2}$"
+                min="13"
+                max="13"
+                title="Номер телефона должен состоять из 12 цифр и должен начинаться с +380"
+                required
+              />
+              <button type="submit" class="button">Сделать заказ</button>
+            </form>
+          </li>
+          <li class="page-list-item">
+            <img
+              class="page-list-img"
+              src="./images/img3.jpg"
+              alt="футбольный мяч Adidas"
+              width="225"
+              height="225"
+            />
+            <h2 class="title-name">Футбольный мяч Adidas</h2>
+            <h3 class="title-price">Цена: 180 000,00 грн.</h3>
+            <form action="#" class="form">
+              <input
+                class="form-input"
+                type="text"
+                name="name"
+                autofocus
+                placeholder="Введите имя"
+                autocomplete="off"
+                pattern="^[a-zA-Zа-яА-Я]*$"
+                title="Имя может состоять только из букв. Например Иван, Анастасия и т. п."
+                minlength="2"
+                maxlength="32"
+                required
+              />
+              <input
+                class="form-input"
+                type="tel"
+                name="phone"
+                placeholder="Введите номер телефона"
+                pattern="^\+380\d{3}\d{2}\d{2}\d{2}$"
+                min="13"
+                max="13"
+                title="Номер телефона должен состоять из 12 цифр и должен начинаться с +380"
+                required
+              />
+              <button type="submit" class="button">Сделать заказ</button>
+            </form>
+          </li>
+          <li class="page-list-item">
+            <img
+              class="page-list-img"
+              src="./images/img4.jpg"
+              alt="золотой футбольный мяч"
+              width="225"
+              height="225"
+            />
+            <h2 class="title-name">Золотой футбольный мяч</h2>
+            <h3 class="title-price">Цена: 300 000,00 грн.</h3>
+            <form action="#" class="form">
+              <input
+                class="form-input"
+                type="text"
+                name="name"
+                autofocus
+                placeholder="Введите имя"
+                autocomplete="off"
+                pattern="^[a-zA-Zа-яА-Я]*$"
+                title="Имя может состоять только из букв. Например Иван, Анастасия и т. п."
+                minlength="2"
+                maxlength="32"
+                required
+              />
+              <input
+                class="form-input"
+                type="tel"
+                name="phone"
+                placeholder="Введите номер телефона"
+                pattern="^\+380\d{3}\d{2}\d{2}\d{2}$"
+                min="13"
+                max="13"
+                title="Номер телефона должен состоять из 12 цифр и должен начинаться с +380"
+                required
+              />
+              <button type="submit" class="button">Сделать заказ</button>
+            </form>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <script src="./js/timer.js" type="module"></script>
+    <script src="./js/api.js" type="module"></script>
+  </body>
+</html>
