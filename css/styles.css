@@ -100,12 +100,12 @@ img {
   margin-bottom: 30px;
   color: var(--title-theme-color);
 }
-.form {
+/* .form {
   display: grid;
   max-width: 45px;
   grid-gap: 10px;
   align-items: center;
-}
+} */
 .form-input {
   padding: 5px;
   max-width: 200px;
@@ -166,3 +166,37 @@ img {
   font-size: 16px;
 }
 /*========== END TIMER ==========*/
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: all 250ms linear;
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: all 250ms linear 250ms;
+}
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0);
+  transition: all 250ms linear 0ms;
+}
+.form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  width: 528px;
+  height: 581px;
+  background-color: var(--secondary-color);
+  transition: all 250ms linear 250ms;
+  padding: 40px;
+  /* display: grid;
+  max-width: 45px;
+  grid-gap: 10px;
+  align-items: center; */
+}

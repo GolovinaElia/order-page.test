@@ -47,33 +47,7 @@
             />
             <h2 class="title-name">Оранжевый футбольный мяч</h2>
             <h3 class="title-price">Цена: 78 000,00 грн.</h3>
-            <form action="#" class="form">
-              <input
-                class="form-input"
-                type="text"
-                name="name"
-                autofocus
-                placeholder="Введите имя"
-                autocomplete="off"
-                pattern="^[a-zA-Zа-яА-Я]*$"
-                title="Имя может состоять только из букв. Например Иван, Анастасия и т. п."
-                minlength="2"
-                maxlength="32"
-                required
-              />
-              <input
-                class="form-input"
-                type="tel"
-                name="phone"
-                placeholder="Введите номер телефона"
-                pattern="^\+380\d{3}\d{2}\d{2}\d{2}$"
-                min="13"
-                max="13"
-                title="Номер телефона должен состоять из 12 цифр и должен начинаться с +380"
-                required
-              />
-              <button type="submit" class="button">Сделать заказ</button>
-            </form>
+            <button class="button" type="button" data-modal-open>Купить</button>
           </li>
           <li class="page-list-item">
             <img
@@ -85,33 +59,7 @@
             />
             <h2 class="title-name">Кожаный футбольный мяч</h2>
             <h3 class="title-price">Цена: 130 000,00 грн.</h3>
-            <form action="#" class="form">
-              <input
-                class="form-input"
-                type="text"
-                name="name"
-                autofocus
-                placeholder="Введите имя"
-                autocomplete="off"
-                pattern="^[a-zA-Zа-яА-Я]*$"
-                title="Имя может состоять только из букв. Например Иван, Анастасия и т. п."
-                minlength="2"
-                maxlength="32"
-                required
-              />
-              <input
-                class="form-input"
-                type="tel"
-                name="phone"
-                placeholder="Введите номер телефона"
-                pattern="^\+380\d{3}\d{2}\d{2}\d{2}$"
-                min="13"
-                max="13"
-                title="Номер телефона должен состоять из 12 цифр и должен начинаться с +380"
-                required
-              />
-              <button type="submit" class="button">Сделать заказ</button>
-            </form>
+            <button class="button" type="button" data-modal-open>Купить</button>
           </li>
           <li class="page-list-item">
             <img
@@ -123,33 +71,7 @@
             />
             <h2 class="title-name">Футбольный мяч Adidas</h2>
             <h3 class="title-price">Цена: 180 000,00 грн.</h3>
-            <form action="#" class="form">
-              <input
-                class="form-input"
-                type="text"
-                name="name"
-                autofocus
-                placeholder="Введите имя"
-                autocomplete="off"
-                pattern="^[a-zA-Zа-яА-Я]*$"
-                title="Имя может состоять только из букв. Например Иван, Анастасия и т. п."
-                minlength="2"
-                maxlength="32"
-                required
-              />
-              <input
-                class="form-input"
-                type="tel"
-                name="phone"
-                placeholder="Введите номер телефона"
-                pattern="^\+380\d{3}\d{2}\d{2}\d{2}$"
-                min="13"
-                max="13"
-                title="Номер телефона должен состоять из 12 цифр и должен начинаться с +380"
-                required
-              />
-              <button type="submit" class="button">Сделать заказ</button>
-            </form>
+            <button class="button" type="button" data-modal-open>Купить</button>
           </li>
           <li class="page-list-item">
             <img
@@ -161,38 +83,43 @@
             />
             <h2 class="title-name">Золотой футбольный мяч</h2>
             <h3 class="title-price">Цена: 300 000,00 грн.</h3>
-            <form action="#" class="form">
-              <input
-                class="form-input"
-                type="text"
-                name="name"
-                autofocus
-                placeholder="Введите имя"
-                autocomplete="off"
-                pattern="^[a-zA-Zа-яА-Я]*$"
-                title="Имя может состоять только из букв. Например Иван, Анастасия и т. п."
-                minlength="2"
-                maxlength="32"
-                required
-              />
-              <input
-                class="form-input"
-                type="tel"
-                name="phone"
-                placeholder="Введите номер телефона"
-                pattern="^\+380\d{3}\d{2}\d{2}\d{2}$"
-                min="13"
-                max="13"
-                title="Номер телефона должен состоять из 12 цифр и должен начинаться с +380"
-                required
-              />
-              <button type="submit" class="button">Сделать заказ</button>
-            </form>
+            <button class="button" type="button" data-modal-open>Купить</button>
           </li>
         </ul>
       </div>
     </section>
+    <!--Модальная форма-->
+    <div class="backdrop is-hidden" data-modal>
+      <form action="#" class="form">
+        <input
+          class="form-input"
+          type="text"
+          name="name"
+          autofocus
+          placeholder="Введите имя"
+          autocomplete="off"
+          pattern="^[a-zA-Zа-яА-Я]*$"
+          title="Имя может состоять только из букв. Например Иван, Анастасия и т. п."
+          minlength="2"
+          maxlength="32"
+          required
+        />
+        <input
+          class="form-input"
+          type="text"
+          name="phone"
+          placeholder="Введите номер телефона"
+          pattern="^\+380\d{3}\d{2}\d{2}\d{2}$"
+          min="13"
+          max="13"
+          title="Номер телефона должен состоять из 12 цифр и должен начинаться с +380"
+          required
+        />
+        <button type="submit" class="button">Сделать заказ</button>
+      </form>
+    </div>
     <script src="./js/timer.js" type="module"></script>
     <script src="./js/api.js" type="module"></script>
+    <script src="./js/modal.js" type="module"></script>
   </body>
 </html>
